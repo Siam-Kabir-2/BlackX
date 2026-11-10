@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ContractAddress } from "./ContractAddress";
+import { HeroUpdates } from "./HeroUpdates";
 
 export function Hero() {
   return (
@@ -19,6 +20,7 @@ export function Hero() {
             <a className="text-link" href="#story">Discover the story <span aria-hidden="true">↗</span></a>
           </div>
           <ContractAddress placement="hero" />
+          <HeroUpdates />
         </div>
         <div className="hero-emblem" aria-hidden="true">
           <Image src="/blackx-emblem.png" alt="" width={520} height={520} priority />

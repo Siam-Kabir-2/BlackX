@@ -17,7 +17,7 @@ export const site = {
   roadmap: [
     { title: "The blackout", description: "Introduce BlackX, its visual world, and the switch story." },
     { title: "The signal", description: "Build the community around the XRP switch and 589 legend." },
-    { title: "The launch", description: "Share verified token, network, and XRP pair details when ready." },
+    { title: "The launch", description: "Share the verified contract, network and XRP trading route when ready." },
     { title: "After the flip", description: "Grow the story and community through future campaigns." },
   ],
 } as const;

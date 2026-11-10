@@ -31,6 +31,12 @@
 .ca-card-bottom > span:last-child { flex: none; font-family: var(--font-geist-mono), monospace; font-size: 10px; letter-spacing: .03em; text-align: right; }
 .ca-card-bottom b { color: #e8edf2; font-weight: 650; }
 .ca-card--hero { background: linear-gradient(135deg, rgba(22, 29, 37, .78), rgba(7, 11, 16, .87)); }
+.hero-updates { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: min(100%, 520px); margin-top: 10px; }
+.hero-updates > span { color: #b8c2cc; font-family: var(--font-geist-mono), monospace; font-size: 10px; letter-spacing: .02em; }
+.hero-updates > div { display: flex; gap: 8px; }
+.hero-updates a { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 30px; padding: 5px 10px; border: 1px solid rgba(234,240,246,.4); border-radius: 3px; background: rgba(10,14,20,.5); color: #edf1f4; font-size: 11px; font-weight: 600; transition: background .2s ease, border-color .2s ease; }
+.hero-updates a:hover { border-color: rgba(255,255,255,.8); background: rgba(255,255,255,.12); }
+.hero-updates a span { color: #aeb8c2; }
 @media (max-width: 900px) {
   .ca-row .ca-card { grid-template-columns: 1fr 1.2fr; gap: 14px 22px; }
   .ca-row .ca-card-bottom { grid-column: 1 / -1; align-items: flex-start; flex-direction: row; justify-content: space-between; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.14); text-align: left; }
@@ -46,12 +52,14 @@
   .ca-card-bottom { align-items: flex-start; flex-direction: column; gap: 5px; }
   .ca-card-bottom > span:last-child { text-align: left; }
   .hero-emblem { top: 70%; opacity: .55; }
+  .hero-updates { width: min(100%, 355px); }
 }
 @media (max-width: 410px) {
   .hero-emblem { top: 72%; opacity: .45; }
   .ca-card-main { min-height: 55px; }
   .ca-card--hero { gap: 8px; }
   .ca-hero-date b { font-size: 10px; }
+  .hero-updates { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
 
 /* Fit the compact launch strip inside the hero viewport. */
