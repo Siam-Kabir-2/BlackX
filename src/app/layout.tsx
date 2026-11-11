@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./switch.css";
@@ -48,5 +49,12 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0b0d10" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body suppressHydrationWarning className={`${geist.variable} ${geistMono.variable}`}>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body suppressHydrationWarning className={`${geist.variable} ${geistMono.variable}`}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
 }
