@@ -5,7 +5,7 @@ export const site = {
   launchDate: "13th November 2026",
   contractAddress: null as string | null,
   socials: [
-    { label: "X", href: "https://x.com/sharkcashVI", handle: "Updates and conversation" },
+    { label: "X", href: "https://x.com/blackX589", handle: "Updates and conversation" },
     { label: "Discord", href: "https://discord.gg/2DGqxaawqw", handle: "Community discussions" },
     { label: "Telegram", href: "https://t.me/+ZtEUjb9VJnQ2OGUx", handle: "Follow the signal" },
   ],
