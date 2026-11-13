@@ -5,6 +5,7 @@ import "./globals.css";
 import "./switch.css";
 import "./refinements.css";
 import "./contract.css";
+import "./mobile-hero.css";
 
 const geist = localFont({ src: "../fonts/geist-latin.woff2", variable: "--font-geist", display: "swap", weight: "100 900" });
 const geistMono = localFont({ src: "../fonts/geist-mono-latin.woff2", variable: "--font-geist-mono", display: "swap", weight: "100 900" });
@@ -13,7 +14,7 @@ const ogImage = {
   url: "/og-image.png",
   width: 1731,
   height: 909,
-  alt: "BlackX | One Switch OFF. Another Switch ON.",
+  alt: "BlackX | Flip the Switch. 589 is the Signal.",
   type: "image/png",
 } as const;
 

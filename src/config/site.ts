@@ -2,7 +2,7 @@ export const site = {
   name: "BlackX",
   tokenSymbol: "$BLACKX",
   logo: "/blackx-emblem.png",
-  launchDate: "13th November 2026",
+  launchDate: "15 November 2026",
   contractAddress: null as string | null,
   socials: [
     { label: "X", href: "https://x.com/blackX589", handle: "Updates and conversation" },

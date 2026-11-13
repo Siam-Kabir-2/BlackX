@@ -47,7 +47,7 @@ export function Navbar() {
           aria-expanded={open}
           aria-controls="main-menu"
           onClick={() => setOpen(!open)}
-        ><span /><span /></button>
+        ><span /><span /><span /></button>
       </nav>
     </header>
   );
