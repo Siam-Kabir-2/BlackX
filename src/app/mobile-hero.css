@@ -121,24 +121,8 @@
   .hero-mobile-socials a:active { transform: scale(.93); }
   .hero-mobile-primary:hover::after, .hero-mobile-secondary:hover::after { background: rgba(12, 28, 41, .96); }
   .hero-mobile-primary:active, .hero-mobile-secondary:active { transform: scale(.98); }
-  .hero-mobile-status {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    min-height: 58px;
-    margin-top: 3px;
-    padding: 7px 8px;
-    border: 1px solid rgba(135, 181, 212, .57);
-    border-radius: 11px;
-    background: rgba(1, 9, 15, .75);
-    box-shadow: inset 0 0 19px rgba(111, 193, 241, .07), 0 0 18px rgba(0, 0, 0, .3);
-  }
-  .hero-mobile-status > div { display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
-  .hero-mobile-status > div + div { border-left: 1px solid rgba(235, 245, 255, .6); }
-  .hero-mobile-status span { color: #bccbd7; font-size: 9px; letter-spacing: .09em; text-transform: uppercase; }
-  .hero-mobile-status strong { color: #f0f9ff; font-size: clamp(14px, 4vw, 21px); font-weight: 750; line-height: 1.1; text-transform: uppercase; text-shadow: 0 0 12px rgba(113, 206, 255, .65); white-space: nowrap; }
-  .hero-mobile-status strong span { color: #e2f0f9; font-size: 20px; }
-  .hero-mobile-status small { color: #a9bbc9; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+  .hero-mobile-bottom > .ca-card--hero { width: 100%; min-height: 58px; margin-top: 3px; padding: 9px 13px; border-color: rgba(135, 181, 212, .57); border-radius: 11px; background: rgba(1, 9, 15, .75); box-shadow: inset 0 0 19px rgba(111, 193, 241, .07), 0 0 18px rgba(0, 0, 0, .3); text-align: left; }
+  .hero-mobile-bottom .ca-hero-copy { min-height: 38px; }
   .hero-mobile-signal { margin: 1px 0 0; color: #b9c6d1; font-size: clamp(9px, 2.5vw, 13px); letter-spacing: .24em; }
   .hero-mobile-signal span { width: clamp(22px, 10vw, 54px); }
 }
@@ -147,5 +131,4 @@
   .hero-mobile-layout { padding-inline: 12px; }
   .hero-mobile-intro h1 { font-size: 7.15vw; }
   .hero-mobile-lede { font-size: 10.5px; }
-  .hero-mobile-status strong { font-size: 13px; }
 }

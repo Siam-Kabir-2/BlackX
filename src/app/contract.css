@@ -9,10 +9,11 @@
 }
 .ca-card--hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; width: min(100%, 520px); margin-top: 22px; padding: 13px 17px; }
 .ca-card--hero > div { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
-.ca-hero-label, .ca-hero-date { color: #b9c5cf; font-family: var(--font-geist-mono), monospace; font-size: 9px; font-weight: 600; letter-spacing: .1em; }
-.ca-card--hero strong { overflow-wrap: anywhere; color: #f2f5f7; font-size: 16px; font-weight: 560; letter-spacing: -.035em; }
-.ca-hero-date { text-align: right; }
-.ca-hero-date b { display: block; margin-top: 5px; color: #f0f3f6; font-size: 11px; font-weight: 650; letter-spacing: 0; }
+.ca-hero-label { color: #b9c5cf; font-family: var(--font-geist-mono), monospace; font-size: 9px; font-weight: 600; letter-spacing: .1em; }
+.ca-card--hero strong { overflow-wrap: anywhere; color: #f2f5f7; font-size: 14px; font-weight: 560; letter-spacing: -.035em; }
+.ca-address-short { display: none; }
+.ca-hero-copy { flex: none; padding: 9px 13px; border: 1px solid rgba(255,255,255,.45); border-radius: 3px; background: rgba(255,255,255,.08); color: #f5f7f9; font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+.ca-hero-copy:hover, .ca-hero-copy:focus-visible { background: rgba(255,255,255,.17); }
 .ca-row { margin-top: clamp(55px, 7vw, 92px); padding-top: 28px; border-top: 1px solid var(--line); }
 .ca-row .ca-card { display: grid; grid-template-columns: minmax(150px, .6fr) minmax(180px, 1fr) minmax(270px, .9fr); align-items: center; gap: 28px; width: 100%; }
 .ca-row .ca-card-top { align-items: flex-start; flex-direction: column; gap: 9px; }
@@ -45,6 +46,8 @@
   .ca-card { padding: 17px 18px 16px; }
   .ca-card--hero { width: min(100%, 355px); margin-top: 19px; padding: 12px 14px; }
   .ca-card--hero strong { font-size: 14px; }
+  .ca-address-full { display: none; }
+  .ca-address-short { display: inline; }
   .ca-row { margin-top: 48px; padding-top: 21px; }
   .ca-row .ca-card { grid-template-columns: 1fr; gap: 10px; }
   .ca-row .ca-card-top { flex-direction: row; align-items: center; }
@@ -58,7 +61,6 @@
   .hero-emblem { top: 72%; opacity: .45; }
   .ca-card-main { min-height: 55px; }
   .ca-card--hero { gap: 8px; }
-  .ca-hero-date b { font-size: 10px; }
   .hero-updates { align-items: flex-start; flex-direction: column; gap: 7px; }
 }
 

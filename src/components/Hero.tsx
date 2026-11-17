@@ -44,10 +44,7 @@ export function Hero() {
               <a href={site.socials[1].href} target="_blank" rel="noopener noreferrer" aria-label="BlackX on Discord"><Image src="/icons/discord-logo.svg" alt="" width={24} height={24} /></a>
             </div>
           </div>
-          <div className="hero-mobile-status">
-            <div><span>Launch status</span><strong>{site.buyUrl ? "Live" : "Coming soon"}</strong><small>{site.launchDate}</small></div>
-            <div><span>Target narrative</span><strong><span aria-hidden="true">✕</span> 589</strong></div>
-          </div>
+          <ContractAddress placement="hero" />
           <p className="hero-mobile-signal"><span />The 589 Signal<span /></p>
         </div>
       </div>
