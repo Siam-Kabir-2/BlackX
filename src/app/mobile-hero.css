@@ -17,6 +17,9 @@
   .menu-toggle--open span:nth-child(2) { opacity: 0; }
   .menu-toggle--open span:last-child { transform: translateY(-8px) rotate(-45deg); }
   .nav-links { top: 54px; inset: 54px 0 0; min-height: calc(100dvh - 54px); }
+  .nav-cta { display: none; }
+  .nav-links .nav-mobile-buy { display: block; margin-top: 18px; padding: 14px 18px; border: 1px solid rgba(224, 243, 255, .76); border-radius: 8px; background: rgba(32, 69, 92, .35); color: #f4fbff; text-align: center; font-size: 21px; font-weight: 700; letter-spacing: -.02em; }
+  .nav-links .nav-mobile-buy:hover, .nav-links .nav-mobile-buy:focus-visible { background: rgba(52, 97, 125, .55); }
 
   .hero { display: block; height: auto; min-height: max(100dvh, 800px); background: #02070c; }
   .hero-inner { display: none; }
@@ -79,18 +82,18 @@
     text-shadow: 0 2px 8px #000;
   }
   .hero-mobile-bottom { display: grid; gap: 10px; }
-  .hero-mobile-flip, .hero-mobile-buy { position: relative; isolation: isolate; color: #f6faff; }
-  .hero-mobile-flip::before, .hero-mobile-flip::after,
-  .hero-mobile-buy::before, .hero-mobile-buy::after {
+  .hero-mobile-primary, .hero-mobile-secondary { position: relative; isolation: isolate; color: #f6faff; }
+  .hero-mobile-primary::before, .hero-mobile-primary::after,
+  .hero-mobile-secondary::before, .hero-mobile-secondary::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
     clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
   }
-  .hero-mobile-flip::before, .hero-mobile-buy::before { background: linear-gradient(120deg, #89b8d3, #f1f8ff 48%, #779fbe); }
-  .hero-mobile-flip::after, .hero-mobile-buy::after { inset: 2px; background: rgba(1, 8, 14, .91); }
-  .hero-mobile-flip {
+  .hero-mobile-primary::before, .hero-mobile-secondary::before { background: linear-gradient(120deg, #89b8d3, #f1f8ff 48%, #779fbe); }
+  .hero-mobile-primary::after, .hero-mobile-secondary::after { inset: 2px; background: rgba(1, 8, 14, .91); }
+  .hero-mobile-primary {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,11 +106,10 @@
     text-shadow: 0 0 14px rgba(224, 247, 255, .65);
     filter: drop-shadow(0 0 8px rgba(123, 204, 255, .25));
   }
-  .hero-mobile-flip span:last-child { position: absolute; right: 10%; font-size: 31px; font-weight: 400; line-height: .6; }
+  .hero-mobile-primary span:last-child { position: absolute; right: 10%; font-size: 31px; font-weight: 400; line-height: .6; }
   .hero-mobile-link-row { display: grid; grid-template-columns: 1fr 1.1fr; gap: 8px; }
-  .hero-mobile-buy { display: flex; align-items: center; justify-content: center; min-height: 44px; }
-  .hero-mobile-buy { gap: 6px; font-size: clamp(10px, 3.15vw, 15px); font-weight: 750; text-transform: uppercase; white-space: nowrap; }
-  .hero-mobile-buy span { font-size: 22px; font-weight: 400; }
+  .hero-mobile-secondary { display: flex; align-items: center; justify-content: center; min-height: 44px; gap: 6px; font-size: clamp(10px, 3.15vw, 15px); font-weight: 750; text-transform: uppercase; white-space: nowrap; }
+  .hero-mobile-secondary span { font-size: 22px; font-weight: 400; }
   .hero-mobile-socials { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; min-height: 44px; }
   .hero-mobile-socials a { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 44px; transition: transform .18s ease; }
   .hero-mobile-socials a::before, .hero-mobile-socials a::after { content: ""; position: absolute; inset: 0; z-index: -1; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 50%, calc(100% - 9px) 100%, 9px 100%, 0 50%); }
@@ -117,8 +119,8 @@
   .hero-mobile-socials a:hover::after, .hero-mobile-socials a:focus-visible::after { background: rgba(27, 61, 82, .98); }
   .hero-mobile-socials a:hover { transform: translateY(-2px); }
   .hero-mobile-socials a:active { transform: scale(.93); }
-  .hero-mobile-flip:hover::after, .hero-mobile-buy:hover::after { background: rgba(12, 28, 41, .96); }
-  .hero-mobile-flip:active, .hero-mobile-buy:active { transform: scale(.98); }
+  .hero-mobile-primary:hover::after, .hero-mobile-secondary:hover::after { background: rgba(12, 28, 41, .96); }
+  .hero-mobile-primary:active, .hero-mobile-secondary:active { transform: scale(.98); }
   .hero-mobile-status {
     display: grid;
     grid-template-columns: 1fr 1fr;

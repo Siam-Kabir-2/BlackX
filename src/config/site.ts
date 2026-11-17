@@ -3,7 +3,8 @@ export const site = {
   tokenSymbol: "$BLACKX",
   logo: "/blackx-emblem.png",
   launchDate: "17 November 2026",
-  contractAddress: null as string | null,
+  contractAddress: "87SMFgwwcMAQdGRzYnA518iEQJjgzEaMZoWLX5XHpump" as string | null,
+  buyUrl: "https://pump.fun/coin/87SMFgwwcMAQdGRzYnA518iEQJjgzEaMZoWLX5XHpump" as string | null,
   socials: [
     { label: "X", href: "https://x.com/blackX589", handle: "Updates and conversation" },
     { label: "Discord", href: "https://discord.gg/2DGqxaawqw", handle: "Community discussions" },
@@ -17,7 +18,12 @@ export const site = {
   roadmap: [
     { title: "The blackout", description: "Introduce BlackX, its visual world, and the switch story." },
     { title: "The signal", description: "Build the community around the XRP switch and 589 legend." },
-    { title: "The launch", description: "Share the verified contract, network and XRP trading route when ready." },
+    { title: "The launch", description: "Share the official contract address and buying route with the community." },
     { title: "After the flip", description: "Grow the story and community through future campaigns." },
   ],
 } as const;
+
+// Until the official URL is set, every Buy now CTA leads to the buying details on this page.
+export const buyLink = site.buyUrl
+  ? { href: site.buyUrl, target: "_blank", rel: "noopener noreferrer" }
+  : { href: "#how-to-buy" };

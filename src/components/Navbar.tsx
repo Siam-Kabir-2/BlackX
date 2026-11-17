@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { buyLink } from "@/config/site";
 
 const links = [
   { label: "Story", href: "#story" },
@@ -38,8 +39,9 @@ export function Navbar() {
         <div className={`nav-links ${open ? "nav-links--open" : ""}`} id="main-menu">
           {links.map((link) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}
           <a className="nav-mobile-community" href="#community" onClick={() => setOpen(false)}>Community</a>
+          <a className="nav-mobile-buy" {...buyLink} onClick={() => setOpen(false)}>Buy now <span aria-hidden="true">↗</span></a>
         </div>
-        <a className="nav-cta" href="#community">Join the community <span aria-hidden="true">↗</span></a>
+        <a className="nav-cta" {...buyLink}>Buy now <span aria-hidden="true">↗</span></a>
         <button
           className={`menu-toggle ${open ? "menu-toggle--open" : ""}`}
           type="button"

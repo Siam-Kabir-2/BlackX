@@ -21,7 +21,7 @@ export function ContractAddress({ placement }: { placement: "hero" | "tokenomics
   if (placement === "hero") {
     return <div className="ca-card ca-card--hero" aria-label="BlackX contract address and launch information">
       <div><span className="ca-hero-label">CA {address ? "LIVE" : "PENDING"}</span><strong>{address || "Revealed at launch"}</strong></div>
-      <span className="ca-hero-date">LAUNCHING <b>{site.launchDate}</b></span>
+      <span className="ca-hero-date">{address ? "LAUNCHED" : "LAUNCHING"} <b>{site.launchDate}</b></span>
     </div>;
   }
 
@@ -36,7 +36,7 @@ export function ContractAddress({ placement }: { placement: "hero" | "tokenomics
     </div>
     <div className="ca-card-bottom">
       <span>{address ? "Verify the address through official channels." : "Official address will appear here."}</span>
-      <span>LAUNCHING <b>{site.launchDate}</b></span>
+      <span>{address ? "LAUNCHED" : "LAUNCHING"} <b>{site.launchDate}</b></span>
     </div>
   </div>;
 }

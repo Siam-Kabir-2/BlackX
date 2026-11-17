@@ -38,7 +38,7 @@ h1, h2, h3, p { margin-top: 0; }
 .nav-cta { padding: 11px 15px; border: 1px solid rgba(255,255,255,.4); border-radius: 3px; transition: background .2s ease, color .2s ease; }
 .nav-cta:hover { background: white; color: #0b0d10; }
 .nav-cta span { margin-left: 8px; }
-.nav-mobile-community, .menu-toggle { display: none; }
+.nav-mobile-community, .nav-mobile-buy, .menu-toggle { display: none; }
 
 /* Hero */
 .hero { position: relative; display: flex; align-items: center; min-height: min(900px, 100dvh); min-height: 100dvh; isolation: isolate; overflow: hidden; background: #101318; }
